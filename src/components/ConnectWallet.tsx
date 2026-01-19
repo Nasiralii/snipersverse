@@ -19,9 +19,12 @@ export const ConnectWallet: React.FC = () => {
                             Ready to trade smarter?
                         </p>
                         
-                        <button className="border border-white rounded-full px-6 sm:px-8 md:px-12 py-2.5 sm:py-3 md:py-4 text-white font-bold text-sm sm:text-base md:text-lg hover:opacity-90 transition-opacity bg-transparent">
+                        <a
+                            href="https://www.snipersverse.com/join/"
+                            className="border border-white rounded-full px-6 sm:px-8 md:px-12 py-2.5 sm:py-3 md:py-4 text-white font-bold text-sm sm:text-base md:text-lg hover:opacity-90 transition-opacity bg-transparent"
+                        >
                             Connect Wallet
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>

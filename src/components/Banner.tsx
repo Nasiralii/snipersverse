@@ -17,6 +17,22 @@ export const Banner: React.FC = () => {
 
             {/* Content */}
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-[2] py-16 md:py-24">
+                {/* Navigation Links */}
+                <div className="flex justify-center items-center gap-6 md:gap-8 mb-8 md:mb-12">
+                    <a href="#" className="text-white hover:text-white/80 text-sm md:text-base transition-colors">
+                        Home
+                    </a>
+                    <a href="https://www.snipersverse.com/howItWorks/" className="text-white hover:text-white/80 text-sm md:text-base transition-colors">
+                        Features
+                    </a>
+                    <a href="#pricing" className="text-white hover:text-white/80 text-sm md:text-base transition-colors">
+                        Pricing
+                    </a>
+                    <a href="https://www.snipersverse.com/faq/" className="text-white hover:text-white/80 text-sm md:text-base transition-colors">
+                        Docs
+                    </a>
+                </div>
+                
                 <div className="text-center">
                     {/* Main Title */}
                     <h1 className="text-white mb-4 md:mb-2 text-4xl sm:text-5xl md:text-6xl lg:text-[72px] font-medium leading-tight">
@@ -32,19 +48,31 @@ export const Banner: React.FC = () => {
 
                     {/* Call-to-Action Buttons */}
                     <div className="flex flex-wrap justify-center gap-3 md:gap-4 mb-8 px-4">
-                        <button className="bg-[#00FF88] text-black px-4 py-2.5 md:px-6 md:py-3 rounded-full font-medium flex items-center gap-2 hover:opacity-90 transition-opacity text-[14px]">
+                        <a
+                            href="https://t.me/SnipersVerseSniperBot"
+                            className="bg-[#00FF88] text-black px-4 py-2.5 md:px-6 md:py-3 rounded-full font-medium flex items-center gap-2 hover:opacity-90 transition-opacity text-[14px]"
+                        >
                             <span>🚀</span>
                             Launch Bot
-                        </button>
-                        <button className="bg-[#00FF88] text-black px-4 py-2.5 md:px-6 md:py-3 rounded-full font-medium hover:opacity-90 transition-opacity text-[14px]">
+                        </a>
+                        <a
+                            href="https://trade.snipersverse.com/"
+                            className="bg-[#00FF88] text-black px-4 py-2.5 md:px-6 md:py-3 rounded-full font-medium hover:opacity-90 transition-opacity text-[14px]"
+                        >
                             Launch Terminal
-                        </button>
-                        <button className="border border-[#00FF88] bg-transparent text-white px-4 py-2.5 md:px-6 md:py-3 rounded-full font-medium hover:bg-[#00FF88]/10 transition-colors text-[14px]">
-                            Join Page
-                        </button>
-                        <button className="bg-[#00FF88] text-black px-4 py-2.5 md:px-6 md:py-3 rounded-full font-medium hover:opacity-90 transition-opacity text-[14px]">
+                        </a>
+                        <a
+                            href="https://www.snipersverse.com/join/"
+                            className="border border-[#00FF88] bg-transparent text-white px-4 py-2.5 md:px-6 md:py-3 rounded-full font-medium hover:bg-[#00FF88]/10 transition-colors text-[14px]"
+                        >
+                            Join
+                        </a>
+                        <a
+                            href="https://www.snipersverse.com/signup"
+                            className="bg-[#00FF88] text-black px-4 py-2.5 md:px-6 md:py-3 rounded-full font-medium hover:opacity-90 transition-opacity text-[14px]"
+                        >
                             Sign Up
-                        </button>
+                        </a>
                     </div>
 
                     {/* KPI Cards */}

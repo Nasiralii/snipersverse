@@ -202,12 +202,13 @@ export const MarketPulse: React.FC = () => {
                                 </div>
 
                                 {/* Open in Terminal Button */}
-                                <button 
-                                    className="bg-black/50 text-[#00FF88] px-4 py-2 rounded-[16px] font-medium text-xs md:text-sm hover:bg-[#00FF88]/10 transition-colors w-full"
+                                <a 
+                                    href="https://trade.snipersverse.com/"
+                                    className="bg-black/50 text-[#00FF88] px-4 py-2 rounded-[16px] font-medium text-xs md:text-sm hover:bg-[#00FF88]/10 transition-colors w-full text-center"
                                     style={{ border: '1px solid rgba(0, 255, 136, 0.3)' }}
                                 >
                                     Open in Terminal
-                                </button>
+                                </a>
                             </div>
                         ))}
                     </div>

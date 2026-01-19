@@ -24,7 +24,7 @@ export const Pricing: React.FC = () => {
     ];
 
     return (
-        <section className="w-full text-white pb-16 relative bg-[#01061A] overflow-hidden">
+        <section id="pricing" className="w-full text-white pb-16 relative bg-[#01061A] overflow-hidden">
             {/* Radial Background - bottom left */}
             <img 
                 src={radialIcon} 
@@ -47,7 +47,7 @@ export const Pricing: React.FC = () => {
                     {/* Pricing Cards */}
                     <div className="flex flex-col md:flex-row justify-center gap-6 md:gap-8">
                         {/* Free Tier */}
-                        <div className="bg-[#0E1E2C] opacity-50 border border-[#15FFDF] rounded-[16px] p-6 md:p-8 flex flex-col md:w-[482px] h-[481px] items-center relative overflow-hidden">
+                        <div className="bg-[#0E1E2C] border border-[#15FFDF] rounded-[16px] p-6 md:p-8 flex flex-col md:w-[482px] h-[481px] items-center relative overflow-hidden">
                             <img 
                                 src={backgroundSvg} 
                                 alt="" 
@@ -67,9 +67,12 @@ export const Pricing: React.FC = () => {
                                     </li>
                                 ))}
                             </ul>
-                            <button className="bg-[#00FF88] text-black px-6 py-3 rounded-[6px] font-bold text-sm md:text-base hover:opacity-90 transition-opacity w-[284px] mt-auto relative z-10">
+                            <a
+                                href="https://www.snipersverse.com/profile"
+                                className="bg-[#00FF88] text-black px-6 py-3 rounded-[6px] font-bold text-sm md:text-base hover:opacity-90 transition-opacity w-[284px] mt-auto relative z-10 text-center"
+                            >
                                 Start Free
-                            </button>
+                            </a>
                         </div>
 
                         {/* Founders Tier */}
@@ -93,9 +96,12 @@ export const Pricing: React.FC = () => {
                                     </li>
                                 ))}
                             </ul>
-                            <button className="bg-[#00FF88] text-black px-6 py-3 rounded-[6px] font-bold text-sm md:text-base hover:opacity-90 transition-opacity w-[284px] mt-auto relative z-10">
+                            <a
+                                href="https://www.snipersverse.com/checkout/?plan=Founders%20Tier&price=%C2%A349.99"
+                                className="bg-[#00FF88] text-black px-6 py-3 rounded-[6px] font-bold text-sm md:text-base hover:opacity-90 transition-opacity w-[284px] mt-auto relative z-10 text-center"
+                            >
                                 Join Founders Tier
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>

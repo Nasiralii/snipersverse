@@ -21,9 +21,12 @@ export const FiniconBanner: React.FC = () => {
                         </h2>
                         
                         {/* Call to Action Button */}
-                        <button className="bg-[#00FF88] text-black px-6 sm:px-8 md:px-12 py-2.5 sm:py-3 md:py-4 rounded-full font-bold text-sm sm:text-base md:text-lg hover:opacity-90 transition-opacity">
+                        <a
+                            href="https://www.snipersverse.com/howItWorks/"
+                            className="bg-[#00FF88] text-black px-6 sm:px-8 md:px-12 py-2.5 sm:py-3 md:py-4 rounded-full font-bold text-sm sm:text-base md:text-lg hover:opacity-90 transition-opacity"
+                        >
                             Explore Finicons
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>

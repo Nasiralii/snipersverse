@@ -7,9 +7,9 @@ export const Header: React.FC = () => {
 
     const navLinks = [
         { label: 'Home', href: '#' },
-        { label: 'Features', href: '#features' },
+        { label: 'Features', href: 'https://www.snipersverse.com/howItWorks/' },
         { label: 'Pricing', href: '#pricing' },
-        { label: 'Docs', href: '#' },
+        { label: 'Docs', href: 'https://www.snipersverse.com/faq/' },
     ];
 
     return (
@@ -51,18 +51,30 @@ export const Header: React.FC = () => {
 
                     {/* Action Buttons */}
                     <div className="hidden lg:flex items-center gap-3">
-                        <button className="border border-white/20 bg-transparent text-white px-4 py-2 rounded-full text-sm font-normal hover:bg-white/10 transition-colors">
+                        <a
+                            href="https://www.snipersverse.com/profile"
+                            className="border border-white/20 bg-transparent text-white px-4 py-2 rounded-full text-sm font-normal hover:bg-white/10 transition-colors"
+                        >
                             Login
-                        </button>
-                        <button className="bg-[#00FF88] text-black px-4 py-2 rounded-full text-sm font-normal hover:opacity-90 transition-opacity">
+                        </a>
+                        <a
+                            href="https://www.snipersverse.com/signup"
+                            className="bg-[#00FF88] text-black px-4 py-2 rounded-full text-sm font-normal hover:opacity-90 transition-opacity"
+                        >
                             Sign Up
-                        </button>
-                        <button className="bg-[#00FF88] text-black px-4 py-2 rounded-full text-sm font-normal hover:opacity-90 transition-opacity">
+                        </a>
+                        <a
+                            href="https://trade.snipersverse.com/"
+                            className="bg-[#00FF88] text-black px-4 py-2 rounded-full text-sm font-normal hover:opacity-90 transition-opacity"
+                        >
                             Launch Terminal
-                        </button>
-                        <button className="bg-[#00FF88] text-black px-4 py-2 rounded-full text-sm font-normal hover:opacity-90 transition-opacity">
+                        </a>
+                        <a
+                            href="https://t.me/SnipersVerseSniperBot"
+                            className="bg-[#00FF88] text-black px-4 py-2 rounded-full text-sm font-normal hover:opacity-90 transition-opacity"
+                        >
                             Launch Bot
-                        </button>
+                        </a>
                     </div>
 
                     {/* Mobile Menu Button */}
@@ -109,31 +121,31 @@ export const Header: React.FC = () => {
                                     {link.label}
                                 </a>
                             ))}
-                            <div className="flex flex-col md:flex-row gap-3 pt-2">
-                                <button 
-                                    onClick={() => setIsMobileMenuOpen(false)}
-                                    className="border border-white/20 bg-transparent text-white px-4 py-2 rounded-full text-sm font-normal hover:bg-white/10 transition-colors w-full md:w-auto"
+                            <div className="flex flex-col gap-3 pt-2">
+                                <a
+                                    href="https://www.snipersverse.com/profile"
+                                    className="border border-white/20 bg-transparent text-white px-4 py-2 rounded-full text-sm font-normal hover:bg-white/10 transition-colors w-full"
                                 >
                                     Login
-                                </button>
-                                <button 
-                                    onClick={() => setIsMobileMenuOpen(false)}
-                                    className="bg-[#00FF88] text-black px-4 py-2 rounded-full text-sm font-normal hover:opacity-90 transition-opacity w-full md:w-auto"
+                                </a>
+                                <a
+                                    href="https://www.snipersverse.com/signup"
+                                    className="bg-[#00FF88] text-black px-4 py-2 rounded-full text-sm font-normal hover:opacity-90 transition-opacity w-full"
                                 >
                                     Sign Up
-                                </button>
-                                <button 
-                                    onClick={() => setIsMobileMenuOpen(false)}
-                                    className="bg-[#00FF88] text-black px-4 py-2 rounded-full text-sm font-normal hover:opacity-90 transition-opacity w-full md:w-auto"
+                                </a>
+                                <a
+                                    href="https://trade.snipersverse.com/"
+                                    className="bg-[#00FF88] text-black px-4 py-2 rounded-full text-sm font-normal hover:opacity-90 transition-opacity w-full"
                                 >
                                     Launch Terminal
-                                </button>
-                                <button 
-                                    onClick={() => setIsMobileMenuOpen(false)}
-                                    className="bg-[#00FF88] text-black px-4 py-2 rounded-full text-sm font-normal hover:opacity-90 transition-opacity w-full md:w-auto"
+                                </a>
+                                <a
+                                    href="https://t.me/SnipersVerseSniperBot"
+                                    className="bg-[#00FF88] text-black px-4 py-2 rounded-full text-sm font-normal hover:opacity-90 transition-opacity w-full"
                                 >
                                     Launch Bot
-                                </button>
+                                </a>
                             </div>
                         </div>
                     </div>

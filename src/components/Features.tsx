@@ -79,9 +79,12 @@ export const Features: React.FC = () => {
 
                     {/* Launch Terminal Button */}
                     <div className="flex justify-center">
-                        <button className="bg-[#00FF88] text-black px-8 py-4 rounded-full font-normal hover:opacity-90 transition-opacity text-sm">
+                        <a
+                            href="https://trade.snipersverse.com/"
+                            className="bg-[#00FF88] text-black px-8 py-4 rounded-full font-normal hover:opacity-90 transition-opacity text-sm"
+                        >
                             Launch Terminal
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
